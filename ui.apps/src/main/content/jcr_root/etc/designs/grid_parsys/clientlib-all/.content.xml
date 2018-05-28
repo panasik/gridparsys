@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    categories="[grid_parsys.all]"
+    embed="[grid_parsys.site,grid_parsys.page,grid_parsys.topnav,grid_parsys.colctrl,grid_parsys.textimage]"/>
