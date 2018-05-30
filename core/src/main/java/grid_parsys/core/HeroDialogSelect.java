@@ -27,10 +27,8 @@ public class HeroDialogSelect extends WCMUse {
         ResourceResolver resolver = getResource().getResourceResolver();
         List<Resource> listResources = new ArrayList<Resource>();
         ValueMap valueMap = null;
-        for (Integer i = 1; i<7;i++){
-            if(i==5){
-                continue;
-            }else{
+        for (Integer i = 1; i<4;i++){
+
             valueMap=new ValueMapDecorator(new HashMap<String, Object>());
 
             String text = i+" column";
@@ -40,7 +38,7 @@ public class HeroDialogSelect extends WCMUse {
             listResources.add(new ValueMapResource(resolver, new ResourceMetadata(), "nt:unstructured", valueMap));
             DataSource ds = new SimpleDataSource(listResources.iterator());
             getRequest().setAttribute(DataSource.class.getName(), ds);
-            }
+
         }
     }
 }
